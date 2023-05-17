@@ -1,0 +1,8 @@
+<div class="grid">
+  <div *ngFor="let panelItem of panelItems" class="col-4 flex justify-content-center">
+    <div [routerLink]="panelItem.routerLink">
+      <p-image [src]="panelItem.imageSrc" width="100"/>
+      <p class="panel-label flex justify-content-center">{{panelItem.label}}</p>
+    </div>
+  </div>
+</div>

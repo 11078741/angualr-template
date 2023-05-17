@@ -1,0 +1,25 @@
+.breadcrumb-container {
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  width: 100%;
+}
+
+:host(::ng-deep) {
+  //noinspection CssUnusedSymbol
+  .p-breadcrumb {
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 3px 5px #00000005, 0 0 2px #0000000d, 0 1px 4px #00000014;
+  }
+
+  //noinspection CssUnusedSymbol
+  .p-menuitem-text {
+    font-size: larger;
+    padding: 0.5rem;
+  }
+
+  .p-component > ul {
+    padding-left: 2rem;
+  }
+}

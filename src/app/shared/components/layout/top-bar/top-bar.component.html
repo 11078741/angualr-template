@@ -1,0 +1,20 @@
+<div class="layout-top-bar">
+  <p-menubar [model]="items" [autoDisplay]="true">
+    <ng-template pTemplate="start">
+      <div class="layout-top-bar-start" routerLink="/" style="cursor: pointer">
+        <p-image [src]="'assets//icons/broom.png'" height="60px"/>
+        <span class="top-bar-title">{{'Clean & Clear' | uppercase}}</span>
+      </div>
+    </ng-template>
+    <ng-template pTemplate="end">
+      <div #layoutActionsEnd>
+        <div class="flex flex-row" style="cursor: pointer">
+          <p-image [src]="'assets/icons/question.png'" height="45px"/>
+          <p-divider layout="vertical" styleClass="ml-2 mr-3 my-0 p-0"/>
+          <p-image [src]="'assets/icons/user.png'" height="45px"/>
+        </div>
+      </div>
+    </ng-template>
+  </p-menubar>
+</div>
+
